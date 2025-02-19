@@ -1,6 +1,6 @@
 branch-defaults:
   master:
-    environment: null
+    environment: your-env-name
 global:
   application_name: your-app-name
   branch: null
