@@ -18,11 +18,13 @@ from django.contrib import admin
 from django.urls import include, path
 from django.http import HttpResponse
 
+
 def home(request):
     return HttpResponse("Welcome to my Django app!")
 
+
 urlpatterns = [
-    path('', home, name='home'),  # Root URL view
-    path('polls/', include('polls.urls')),
-    path('admin/', admin.site.urls),
+    path("", home, name="home"),  # Root URL view
+    path("polls/", include("polls.urls")),
+    path("admin/", admin.site.urls),
 ]
