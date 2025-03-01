@@ -9,3 +9,12 @@ install:
 
 script:
   - pytest
+
+env:
+  global:
+    - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+    - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+    - AWS_REGION="us-west-2"
+    - EB_APPLICATION_NAME="your-eb-app-name"
+    - EB_ENVIRONMENT_NAME="your-eb-env-name"
+
