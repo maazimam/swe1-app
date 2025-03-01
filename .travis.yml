@@ -5,7 +5,6 @@ python:
 
 install:
   - pip install -r requirements.txt
-  - pip install black flake8  # Ensure black and flake8 are installed
 
 script:
   - black . --check
