@@ -8,7 +8,8 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - pytest
+  - python manage.py test || pytest
+
 
 env:
   global:
