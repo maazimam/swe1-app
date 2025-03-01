@@ -1,9 +1,9 @@
 from django.test import TestCase
-from .models import Question
 from django.utils import timezone
+from polls.models import Question  # Explicit import
 
-
-class QuestionModelTests(TestCase):
-    def test_was_published_recently(self):
+class QuestionTests(TestCase):
+    def test_recent_publication(self):
+        """Test was_published_recently()"""
         q = Question(pub_date=timezone.now())
         self.assertTrue(q.was_published_recently())

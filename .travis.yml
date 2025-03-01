@@ -12,6 +12,8 @@ script:
   - flake8  # ✅ Run Flake8 linter
   - python manage.py migrate  # ✅ Ensure DB migrations run before tests
   - python manage.py test || pytest  # ✅ Run Django tests
+  - python manage.py makemigrations
+  - python manage.py test polls
 
 env:
   global:
