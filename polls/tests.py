@@ -8,4 +8,6 @@ class QuestionTests(TestCase):
         """Test was_published_recently()"""
         q = Question(pub_date=timezone.now())
         self.assertTrue(q.was_published_recently())
+
+
 # 👇 Ensure this is the last line (empty newline)
