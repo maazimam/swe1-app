@@ -8,6 +8,7 @@ install:
   - pip install black flake8
 
 script:
+  - black .
   - black . --check  # ✅ Check code formatting
   - flake8  # ✅ Run Flake8 linter
   - python manage.py migrate  # ✅ Ensure DB migrations run before tests
